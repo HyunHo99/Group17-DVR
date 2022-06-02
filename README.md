@@ -28,3 +28,7 @@ If you want to train the model from scratch, type
 ```
 python fit.py config/(whatever)/(youwant).yaml
 ```
+# Evaluation
+We used official DTU MVS dataset evaluation code [Here](https://roboimagedata.compute.dtu.dk/?page_id=36) 'surface' mode.
+Download 'SampleSet' and run the matlab code with generated mesh.
+
