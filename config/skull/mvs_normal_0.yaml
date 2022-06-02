@@ -1,0 +1,33 @@
+train:
+  path: data/DTU
+  batch_size: 1
+  batch_size_val: 1
+  check_val_every_n_epoch: 100
+  backup_every: 1000
+  max_epochs : 10000
+
+dataset:
+  dir_data: data/DTU/scan65/scan65
+  depth_type : 'mvs'
+  ignore_idx: [3, 4, 5, 6, 7, 16, 17, 18, 19, 20, 21, 36, 37, 38, 39]
+
+trainer:
+  out_dir:  out/skull/mvs_normal_0
+  num_pixel_train: 2048
+  num_pixel_eval: 16000
+  depth_range: [0., 1400.]
+  lambda_occupied: 1.
+  lambda_freespace: 1.
+  lambda_rgb: 1.
+  lambda_depth: 1.
+  lambda_sparse_depth: 0.
+  lambda_normal: 0.
+  lr: 0.0001
+  lr_schedule: [3000, 5000]
+  gamma: 0.5
+
+generator:
+  grid_resolution: 32
+  refine_batch_size: 10000
+  num_upsample: 4
+  num_refine: 30
