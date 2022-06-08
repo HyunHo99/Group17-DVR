@@ -1,6 +1,6 @@
 # Group17-dvr
 This is repository for CS492 development project - Differentiable Volumetric Rendering [paper](https://arxiv.org/abs/1912.07372).
-We borrowed mesh extraction code for occupancy network ("/utils" and "setup.py" and part of "generator.py") from [Occupancy network github]( https://github.com/autonomousvision/occupancy_networks/tree/master/im2mesh).
+We borrowed mesh generation code for occupancy network ("/utils" and "setup.py" and part of "generator.py") from [Occupancy network github]( https://github.com/autonomousvision/occupancy_networks/tree/master/im2mesh).
 We referenced the mesh refinement code from original code because there are no explanation about this on the paper
 # Setup
 type 
