@@ -14,6 +14,7 @@ You can download DTU MVS dataset from [Here](https://s3.eu-central-1.amazonaws.c
 create "data" folder in the main directory and place the dataset there.
 # Generate output
 You can download pretrained model [Here](https://drive.google.com/file/d/1bkQ7XoDMz1832BIcKrON1nTpKhCtEWZw/view?usp=sharing).
+The dataset is from [Official dvr code github](https://github.com/autonomousvision/differentiable_volumetric_rendering)
 Unzip the out.zip and place in main directory.
 Then, type
 ```
