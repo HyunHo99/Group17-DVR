@@ -22,6 +22,7 @@ class Mesh_Generator(object):
         self.refine_batch_size = refine_batch_size
         
     def generate(self):
+        # we borrowed this part from occupancy network
         self.model.eval()
         
         mesh_extractor = MISE(self.grid_resolution, self.num_upsample, 0)
@@ -56,6 +57,7 @@ class Mesh_Generator(object):
         return p_occ
     
     def get_mesh(self, p_occ):
+        # we borrowed this part from occupancy network
         w, h, z = p_occ.shape
         vert, tri = libmcubes.marching_cubes(np.pad(p_occ, 1, 'constant', constant_values = -1e6), 0)
         vert -= 0.5
